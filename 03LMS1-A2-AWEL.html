@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        div{
+            background-color:#F6F4D2;
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #cbdfbd;
+            color: #3a3a39;
+        }
+        .name, .message, .email{
+            background-color: #D4E09B;
+            border: none;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            padding-left: 8px;
+            box-shadow: 2px 2px grey;
+        }
+        .name, .email{
+            width: 250px;
+            height: 35px;
+
+        }
+        .message{
+            padding: 8px;
+            resize: none;
+        }
+        .submit{
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #f19c79;
+            border-radius: 8px;
+            box-shadow: 2px 2px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><span>Contact Me!</span></h1>
+    <div>
+        <form align="center"> 
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="name" placeholder="Name" autocomplete="off"> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="email" placeholder="Email Address" autocomplete="off"> <br>
+            
+            <textarea name="message" class="message" cols="50" rows="8" placeholder="Type your Message Here"></textarea> <br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</body>
+</html>

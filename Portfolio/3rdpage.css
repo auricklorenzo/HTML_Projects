@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+    font-family: Pop Bold;
+    src: url(Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #99B2DD;
+}
+.logo{
+    position: absolute;
+    left: 150px;
+    width: 130px;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    width: 100%;
+    height: 10px;
+    z-index: 3;
+}
+nav ul{
+    position: absolute;
+    display: flex;
+    right: 150px;
+    align-items: center;
+}
+nav ul li{
+    margin: 40px;
+    list-style-type: none;
+    font-family: Pop Bold;
+    font-size: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: #3A405A;
+}
+
+.section1{
+    min-height: 100vh;
+    position: relative;
+}
+.contact{
+    margin: 0 auto;
+    position: absolute;
+    left: 150px;
+    top: 25%;
+    z-index: 1;
+    width: 75%;
+    height: auto;
+}
+.contact h1{
+    font-family: Pop Bold;
+    font-size: 100px;
+}
+
+.form{
+    margin: 0 auto;
+    position: absolute;
+    right: 170px;
+    top: 15%;
+    width: 400px;
+    height: 440px;
+    background-color: #3A405A;
+    padding: 20px;
+    padding-left: 40px;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: 3px 3px grey;
+}
+.form form label{
+    font-family: Poppins;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+.form form .name, .email, .num{
+    font-family: Poppins;
+    width: 365px;
+    background-color: #FFF3B0;
+    border: none;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+#message{
+    background-color: #FFF3B0;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+    font-family: Poppins;
+    box-shadow: 2px 2px;
+}
+form{
+    position: relative;
+}
+.submit{
+    position: absolute;
+    left: 35%;
+    border: none;
+    background-color: #F19C79;
+    font-family: Pop Bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+.submit:hover{
+    background-color: #FFF3B0;
+}
+footer{
+    min-height: 30vh;
+    background-color: #3A405A;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+footer .copyright{
+    font-family: Poppins;
+    position: absolute;
+    bottom: 20px;
+    left: 46%;
+
+}
+footer .socmed{
+    width: auto;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    left: 44%;
+}
+footer .socmed img{
+    margin: 20px;
+}
+footer .links{
+    align-items: center;
+    font-family: Poppins;
+    padding-top: 10px;
+    position: absolute;
+    top: 10%;
+    left: 41%;
+}
+footer .links a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+footer .links a:hover{
+    color: grey;
+}
+footer .sidelinks{
+    position:absolute;
+    left: 150px;
+    top: 18%;
+    width: 300px;
+}
+footer .sidelinks p{
+    font-family: Poppins;
+}
+footer .sidelinks p a{
+    color: white;
+    text-decoration: none;
+}
+footer .sidelinks p a:hover{
+    color: grey;
+}
+
+

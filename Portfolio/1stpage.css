@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+    font-family: Pop Bold;
+    src: url(Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #99B2DD;
+}
+.logo{
+    position: absolute;
+    left: 150px;
+    width: 130px;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    width: 100%;
+    height: 10px;
+    z-index: 3;
+}
+nav ul{
+    position: absolute;
+    display: flex;
+    right: 150px;
+    align-items: center;
+}
+nav ul li{
+    margin: 40px;
+    list-style-type: none;
+    font-family: Pop Bold;
+    font-size: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: #3A405A;
+}
+.section1{
+    min-height: 100vh;
+    position: relative;
+}
+.section2{
+    min-height: 101vh;
+    position: relative;
+}
+.intro{
+    position: absolute;
+    top: 10%;
+    left: 150px;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+}
+.intro h1{
+    font-family: Pop Bold;
+    font-size: 140px;
+}
+.intro .arrow_down{
+    position: absolute;
+    width: 30px;
+    left: 50%;
+    top: 75vh;
+    align-self: center;
+}
+
+.me{
+    margin: 0 auto;
+    position: absolute;
+    left: 150px;
+    top: 25%;
+    z-index: 1;
+    width: 75%;
+    height: auto;
+}
+.me p .name{
+    font-family: Pop Bold;
+    font-size: 30px;
+    color: #3A405A;
+}
+.me p .soft{
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.me .info{
+    font-family: Poppins;
+    font-size: 20px;
+}
+.profile{
+    position: absolute;
+    width: 600px;
+    top: 10%;
+    right: 10%;
+}
+.wave1{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+
+.section3{
+    min-height: 100vh;
+    position: relative;
+}
+.wave2{
+    width: 100%;
+}
+.hobbies{
+    margin: 0 auto;
+    position: absolute;
+    left: 150px;
+    top: 20%;
+    z-index: 1;
+    width: 77%;
+    height: auto;
+    text-align: right;
+}
+.kdrama{
+    width: 45%;
+    position: absolute;
+    left: 0;
+}
+.hobbies .title{
+    position: absolute;
+    top: 90%;
+    right: 0;
+    font-family: Pop Bold;
+    font-size: 60px;
+    color: #3A405A;
+}
+.section3 ul{
+    position: absolute;
+    right: 150px;
+    top: 35%;
+}
+.section3 ul li{
+    font-family: Pop Bold;
+    font-size: 25px;
+    line-height: 60px;
+}
+.section4{
+    min-height: 100vh;
+    position: relative;
+}
+.passion{
+    margin: 0 auto;
+    position: absolute;
+    left: 150px;
+    top: 10%;
+    z-index: 1;
+    width: 77%;
+    height: auto;
+    text-align: center;
+}
+.passion h1{
+    font-family: Pop Bold;
+    font-size: 50px;
+}
+.passion .engineer{
+    font-size: 165px;
+    opacity: 20%;
+}
+
+.passion p{
+    font-family: Pop Bold;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+}
+.section5{
+    min-height: 100vh;
+    position: relative;
+}
+.quote{
+    margin: 0 auto;
+    position: absolute;
+    left: 150px;
+    top: 55%;
+    z-index: 1;
+    width: 77%;
+    height: auto;
+    text-align: center;
+}
+.quote p{
+    font-family: Kaushan Script;
+    font-size: 40px;
+}
+.wave3{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+}
+.section6{
+    min-height: 100vh;
+    position: relative;
+}
+.wave4{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 35%;
+}
+.project{
+    margin: 0 auto;
+    position: absolute;
+    left: 150px;
+    top: 35%;
+    z-index: 1;
+    width: 77%;
+    height: auto;
+}
+.project h1{
+    font-family: Pop Bold;
+    font-size: 60px;
+}
+.project p{
+    font-family: Poppins;
+    font-size: 25px;
+}
+.project a button{
+    width: 150px;
+    height: 50px;
+    font-family: Poppins;
+    font-size: 15px;
+    background-color: #F19C79;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 3px grey;
+    cursor: pointer;
+}
+.project a button:hover{
+    background-color: #D4E09B;
+}
+.undraw{
+    position: absolute;
+    width: 500px;
+    right: 150px;
+    top: 20%;
+}
+footer{
+    min-height: 30vh;
+    background-color: #3A405A;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+footer .copyright{
+    font-family: Poppins;
+    position: absolute;
+    bottom: 20px;
+    left: 46%;
+
+}
+footer .socmed{
+    width: auto;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    left: 44%;
+}
+footer .socmed img{
+    margin: 20px;
+}
+footer .links{
+    align-items: center;
+    font-family: Poppins;
+    padding-top: 10px;
+    position: absolute;
+    top: 1 0%; 
+    left: 41%;
+}
+footer .links a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+footer .links a:hover{
+    color: grey;
+}
+footer .sidelinks{
+    position:absolute;
+    left: 150px;
+    top: 18%;
+    width: 300px;
+}
+footer .sidelinks p{
+    font-family: Poppins;
+}
+footer .sidelinks p a{
+    color: white;
+    text-decoration: none;
+}
+footer .sidelinks p a:hover{
+    color: grey;
+}

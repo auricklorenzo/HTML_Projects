@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaleable Vector Graphics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: azure;
+        }
+        section{
+            position: relative;
+            min-height: 100vh;
+        }
+        section .C1{
+            fill: #FBC79E;
+            position: absolute;
+            top: 0;
+            left: -25px;
+            stroke: #264653;
+            stroke-width: 20px;
+        }
+        section .title{
+            position: absolute;
+            margin: auto;
+            left: 35%;
+            top: 25%;
+            z-index: 3;
+            text-align: center;
+        }
+        .title h1{
+            font-family: Lobster;
+            font-size: 125px;
+            z-index: 2;
+            text-shadow: 4px 2px 2px yellow;
+        }
+        .line1{
+            stroke: yellow;
+            stroke-width: 20px;
+        }
+        .linepar{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .line2{
+            stroke: yellowgreen;
+            stroke-width: 40px;
+        }
+        .recpar{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .rec{
+            fill: #e9c46a;
+            stroke: #606c38;
+            stroke-width: 10px;
+        }
+        .polypar{
+            position: absolute;
+            top: 0;
+            left: 20%;
+        }
+        .polypar .lin3{
+            fill: #e63946;
+
+        }
+        .elipsepar{
+            position: absolute;
+            left: 0;
+            bottom: 0%;
+        }
+        .elipsepar ellipse{
+            fill: none;
+            stroke: #FF006E;
+            stroke-width: 20px;
+        }
+        .polypar2{
+            position: absolute;
+            top: 0;
+            right: 20%;
+        }
+        .polypar2 .lin4{
+            fill: #81b29a;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <svg width="500" height="500" >
+            <circle class="C1" cx="0" cy="0" r="300"/>
+        </svg>
+
+        <div class="title">
+            <h1>Vector <br> Graphics</h1>
+        </div>
+        <svg width="400" height="400" class="linepar">
+            <line class="line1" x1="500" y1="100" x2="150" y2="425" />
+            <line class="line2" x1="500" y1="250" x2="300" y2="425" />
+        </svg>
+        <svg width="400" height="500" class="recpar">
+            <rect class="rec" width="400" height="300" x="200" y="25"/>
+        </svg>
+        <svg class="polypar" width = "200" height="200">
+            <polyline class="lin3" points="250 100, 150 150, 200 100"/>
+        </svg>
+        <svg class="elipsepar" width="400" height="300">
+            <ellipse cx="200" cy="150" rx="50" ry="100"/>
+        </svg>
+        <svg class="polypar2" width = "200" height="200">
+            <polyline class="lin4" points="150 100, 100 200, 200 100"/>
+        </svg>
+    </section>
+</body>
+</html>
